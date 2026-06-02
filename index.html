@@ -10,72 +10,64 @@
 body{
     margin:0;
     font-family: 'Segoe UI', sans-serif;
-    background:#F8F3EB;
-    color:#4A3F35;
-}
-
-/* HEADER */
-header{
-    background:#7A8765;
-    padding:15px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo img{
-    height:50px;
-}
-
-/* NAV */
-nav a{
-    color:white;
-    margin-left:15px;
-    text-decoration:none;
-    font-weight:bold;
+    background:#f7f3ee;
+    color:#3b2f2a;
 }
 
 /* HERO */
 .hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:80px 20px;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1542826438-bd32f43d626f") center/cover;
+    color:white;
+    padding:20px;
 }
 
 .hero h1{
-    font-size:3rem;
-    margin-bottom:10px;
+    font-size:4rem;
+    margin:0;
 }
 
 .hero p{
-    font-size:1.2rem;
-    max-width:700px;
-    margin:auto;
+    font-size:1.3rem;
+    max-width:600px;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
+    margin-top:20px;
+    background:#b88b5a;
     padding:15px 30px;
-    background:#B68A5A;
+    border-radius:30px;
     color:white;
     text-decoration:none;
-    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
 }
 
 /* SECCIONES */
 .section{
+    padding:70px 20px;
     max-width:1100px;
     margin:auto;
-    padding:60px 20px;
 }
 
-.section h2{
+h2{
     text-align:center;
-    color:#7A8765;
-    margin-bottom:30px;
+    font-size:2rem;
+    margin-bottom:40px;
+    color:#7a8765;
 }
 
-/* PRODUCTOS */
+/* CARDS */
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -85,13 +77,13 @@ nav a{
 .card{
     background:white;
     padding:20px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
 .card:hover{
-    transform:scale(1.05);
+    transform:translateY(-5px);
 }
 
 /* BENEFICIOS */
@@ -110,14 +102,14 @@ nav a{
 
 /* FOOTER */
 footer{
-    background:#4A3F35;
+    background:#2f2a26;
     color:white;
     text-align:center;
-    padding:20px;
-    margin-top:40px;
+    padding:30px;
+    margin-top:50px;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 .whatsapp{
     position:fixed;
     bottom:20px;
@@ -128,7 +120,7 @@ footer{
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 </style>
@@ -137,129 +129,66 @@ footer{
 
 <body>
 
-<header>
-
-<div class="logo">
-    <img src="logo.png" alt="Savia Dulce">
+<!-- HERO -->
+<div class="hero">
+    <h1>Savia Dulce</h1>
+    <p>Repostería saludable, fitness y artesanal. Disfruta lo dulce sin culpa.</p>
+    <a class="btn" href="https://www.instagram.com/sav_iadulce">Haz tu pedido</a>
 </div>
 
-<nav>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Savia Dulce</h1>
-
-<p>Disfruta lo dulce, nutre tu mejor versión.</p>
-
-<p>
-Pastelería natural, fitness y saludable elaborada con ingredientes de calidad,
-menos azúcar y mucho sabor.
-</p>
-
-<a class="btn" href="https://www.instagram.com/sav_iadulce" target="_blank">
-Haz tu pedido
-</a>
-
-</section>
-
-<section id="nosotros" class="section">
-
+<!-- NOSOTROS -->
+<div class="section">
 <h2>Sobre Nosotros</h2>
-
 <p style="text-align:center; max-width:800px; margin:auto;">
-Savia Dulce es una pastelería natural, fitness y saludable dedicada a la elaboración de postres con ingredientes de calidad,
-menos azúcar y recetas pensadas para disfrutar sin culpa.
+Creamos postres saludables, naturales y artesanales en Madrid.
+Combinamos sabor, nutrición y estética para que disfrutes sin renunciar a tu estilo de vida fitness.
 </p>
+</div>
 
-</section>
-
-<section id="productos" class="section">
-
-<h2>Productos</h2>
+<!-- PRODUCTOS -->
+<div class="section">
+<h2>Productos Destacados</h2>
 
 <div class="cards">
 
-<div class="card">
-<h3>Cheesecake Saludable</h3>
-<p>Desde 22 €</p>
-</div>
-
-<div class="card">
-<h3>Tarta Fitness de Chocolate</h3>
-<p>Desde 25 €</p>
-</div>
-
-<div class="card">
-<h3>Tarta de Frutos Rojos</h3>
-<p>Desde 28 €</p>
-</div>
-
-<div class="card">
-<h3>Bizcocho de Calabaza</h3>
-<p>Desde 15 €</p>
-</div>
-
-<div class="card">
-<h3>Brownies Fit</h3>
-<p>Desde 12 €</p>
-</div>
-
-<div class="card">
-<h3>Postres Personalizados</h3>
-<p>Consultar</p>
-</div>
+<div class="card">🍰 Cheesecake saludable<br><b>22 €</b></div>
+<div class="card">🍫 Tarta fitness de chocolate<br><b>25 €</b></div>
+<div class="card">🫐 Tarta de frutos rojos<br><b>28 €</b></div>
+<div class="card">🎃 Bizcocho de calabaza<br><b>15 €</b></div>
+<div class="card">🍪 Brownies fit<br><b>12 €</b></div>
+<div class="card">🎂 Personalizados<br><b>Consultar</b></div>
 
 </div>
+</div>
 
-</section>
-
-<section id="beneficios" class="section">
-
-<h2>¿Por qué elegirnos?</h2>
+<!-- BENEFICIOS -->
+<div class="section">
+<h2>¿Por qué Savia Dulce?</h2>
 
 <div class="beneficios">
-
-<div class="beneficio">🌿 Ingredientes naturales</div>
-<div class="beneficio">💚 Menos azúcar</div>
-<div class="beneficio">🏃 Opciones fitness</div>
+<div class="beneficio">🌿 Natural</div>
+<div class="beneficio">💚 Saludable</div>
+<div class="beneficio">🏋️ Fitness</div>
 <div class="beneficio">🍰 Artesanal</div>
+</div>
 
 </div>
 
-</section>
-
-<section id="contacto" class="section">
-
+<!-- CONTACTO -->
+<div class="section">
 <h2>Contacto</h2>
-
 <p style="text-align:center;">
-📍 Madrid, España
+📍 Madrid, España <br><br>
+Instagram: @sav_iadulce
 </p>
-
-<p style="text-align:center;">
-Instagram:
-<a href="https://www.instagram.com/sav_iadulce" target="_blank">
-@sav_iadulce
-</a>
-</p>
-
-</section>
+</div>
 
 <footer>
 © 2025 Savia Dulce - Repostería saludable
 </footer>
 
-<!-- WHATSAPP BUTTON -->
-<a class="whatsapp" href="https://wa.me/34633431821" target="_blank">
-📱 WhatsApp
-</a>
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/34XXXXXXXXX">WhatsApp</a>
 
 </body>
 </html>
