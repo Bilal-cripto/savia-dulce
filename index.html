@@ -3,54 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Savia Dulce | Repostería Saludable en Madrid</title>
+<title>Savia Dulce | Repostería Saludable</title>
 
 <style>
 
 body{
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
     background:#f6f1ea;
     color:#3b2f2a;
 }
 
 /* HERO */
 .hero{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1541592106381-b31e9677c0e5") center/cover;
     height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-    url("https://images.unsplash.com/photo-1541592106381-b31e9677c0e5") center/cover;
     color:white;
     padding:20px;
 }
 
 .hero h1{
     font-size:3.5rem;
-    margin:0;
 }
 
 .hero p{
-    font-size:1.2rem;
     max-width:600px;
+    font-size:1.2rem;
 }
 
 .btn{
     margin-top:20px;
-    padding:15px 28px;
+    padding:15px 25px;
     background:#b88b5a;
     color:white;
     border-radius:30px;
     text-decoration:none;
     font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
 }
 
 /* SECCIONES */
@@ -63,7 +57,6 @@ body{
 h2{
     text-align:center;
     color:#7a8765;
-    margin-bottom:30px;
 }
 
 /* PRODUCTOS */
@@ -71,23 +64,18 @@ h2{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
+    margin-top:30px;
 }
 
 .card{
     background:white;
     padding:20px;
-    border-radius:18px;
+    border-radius:15px;
     box-shadow:0 10px 20px rgba(0,0,0,0.08);
-    transition:0.3s;
-    cursor:pointer;
+    text-align:center;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-}
-
-/* BOTÓN PRODUCTO */
-.card a{
+.btn-producto{
     display:inline-block;
     margin-top:10px;
     padding:10px 15px;
@@ -95,7 +83,6 @@ h2{
     color:white;
     text-decoration:none;
     border-radius:20px;
-    font-size:14px;
 }
 
 /* BENEFICIOS */
@@ -117,10 +104,11 @@ footer{
     background:#2f2a26;
     color:white;
     text-align:center;
-    padding:30px;
+    padding:20px;
+    margin-top:40px;
 }
 
-/* WHATSAPP */
+/* WHATSAPP FLOAT */
 .whatsapp{
     position:fixed;
     bottom:20px;
@@ -131,7 +119,6 @@ footer{
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
-    box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 </style>
@@ -143,8 +130,11 @@ footer{
 <!-- HERO -->
 <div class="hero">
     <h1>Savia Dulce</h1>
-    <p>Repostería saludable, artesanal y fitness en Madrid. Disfruta lo dulce sin culpa.</p>
-    <a class="btn" href="https://wa.me/34XXXXXXXXX">Pedir por WhatsApp</a>
+    <p>Repostería saludable, fitness y artesanal en Madrid</p>
+
+    <a class="btn" href="https://wa.me/346XXXXXXXX?text=Hola%20quiero%20hacer%20un%20pedido">
+    Pedir ahora
+    </a>
 </div>
 
 <!-- NOSOTROS -->
@@ -152,44 +142,44 @@ footer{
 <h2>Sobre Nosotros</h2>
 <p style="text-align:center; max-width:800px; margin:auto;">
 Creamos postres saludables con ingredientes naturales, menos azúcar y mucho sabor.
-Diseñado para quienes quieren cuidarse sin renunciar al placer dulce.
+Perfecto para disfrutar sin culpa.
 </p>
 </div>
 
 <!-- PRODUCTOS -->
 <div class="section">
-<h2>Productos más pedidos</h2>
+<h2>Productos</h2>
 
 <div class="cards">
 
 <div class="card">
 🍰 Cheesecake saludable<br><b>22 €</b><br>
-<a href="https://wa.me/34XXXXXXXXX?text=Quiero%20una%20Cheesecake%20Saludable">Pedir</a>
+<a class="btn-producto" href="https://wa.me/346XXXXXXXX?text=Quiero%20Cheesecake%20Saludable">Pedir</a>
 </div>
 
 <div class="card">
-🍫 Tarta fitness de chocolate<br><b>25 €</b><br>
-<a href="https://wa.me/34XXXXXXXXX?text=Quiero%20Tarta%20Fitness%20Chocolate">Pedir</a>
+🍫 Tarta fitness chocolate<br><b>25 €</b><br>
+<a class="btn-producto" href="https://wa.me/346XXXXXXXX?text=Quiero%20Tarta%20de%20Chocolate">Pedir</a>
 </div>
 
 <div class="card">
-🫐 Tarta de frutos rojos<br><b>28 €</b><br>
-<a href="https://wa.me/34XXXXXXXXX?text=Quiero%20Tarta%20Frutos%20Rojos">Pedir</a>
+🫐 Tarta frutos rojos<br><b>28 €</b><br>
+<a class="btn-producto" href="https://wa.me/346XXXXXXXX?text=Quiero%20Tarta%20Frutos%20Rojos">Pedir</a>
 </div>
 
 <div class="card">
 🎃 Bizcocho de calabaza<br><b>15 €</b><br>
-<a href="https://wa.me/34XXXXXXXXX?text=Quiero%20Bizcocho%20de%20Calabaza">Pedir</a>
+<a class="btn-producto" href="https://wa.me/346XXXXXXXX?text=Quiero%20Bizcocho%20de%20Calabaza">Pedir</a>
 </div>
 
 <div class="card">
 🍪 Brownies fit<br><b>12 €</b><br>
-<a href="https://wa.me/34XXXXXXXXX?text=Quiero%20Brownies%20Fit">Pedir</a>
+<a class="btn-producto" href="https://wa.me/346XXXXXXXX?text=Quiero%20Brownies%20Fit">Pedir</a>
 </div>
 
 <div class="card">
 🎂 Personalizados<br><b>Consultar</b><br>
-<a href="https://wa.me/34633431821text=Quiero%20un%20pedido%20personalizado">Pedir</a>
+<a class="btn-producto" href="https://wa.me/346XXXXXXXX?text=Quiero%20un%20pedido%20personalizado">Pedir</a>
 </div>
 
 </div>
@@ -200,10 +190,10 @@ Diseñado para quienes quieren cuidarse sin renunciar al placer dulce.
 <h2>¿Por qué elegirnos?</h2>
 
 <div class="beneficios">
-<div>🌿 Natural</div>
-<div>💚 Saludable</div>
-<div>🏋️ Fitness</div>
-<div>🍰 Artesanal</div>
+<div class="beneficio">🌿 Natural</div>
+<div class="beneficio">💚 Saludable</div>
+<div class="beneficio">🏋️ Fitness</div>
+<div class="beneficio">🍰 Artesanal</div>
 </div>
 
 </div>
@@ -212,17 +202,19 @@ Diseñado para quienes quieren cuidarse sin renunciar al placer dulce.
 <div class="section">
 <h2>Contacto</h2>
 <p style="text-align:center;">
-📍 Madrid, España <br><br>
+📍 Madrid, España<br>
 Instagram: @sav_iadulce
 </p>
 </div>
 
 <footer>
-© 2025 Savia Dulce - Repostería saludable
+© 2025 Savia Dulce
 </footer>
 
 <!-- WHATSAPP FLOAT -->
-<a class="whatsapp" href="https://wa.me/34XXXXXXXXX">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/34633431821text=Hola%20quiero%20información">
+WhatsApp
+</a>
 
 </body>
 </html>
